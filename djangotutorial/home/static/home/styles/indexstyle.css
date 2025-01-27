@@ -1,0 +1,53 @@
+/*index.html的样式设置*/
+.slider {
+  text-align: center;
+  align-items: center;
+  margin: 20px 0;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  display: flex;
+  width: 100vh;
+}
+.slider img {
+  width: 1000px;
+  height: 400px;
+  object-fit: cover;
+  display: none;
+}
+.slider img.active{
+  display: block;
+}
+.controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+.control-btn {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+.thumbnails {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+}
+.thumbnail {
+  width: 20px;
+  height: 20px;
+  background-color: gray;
+  margin-left: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.thumbnail.active {
+  background-color: white;
+}
+

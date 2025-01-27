@@ -1,0 +1,91 @@
+/*freetotalk.html的样式设置*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    /* border: 10px solid blue; */
+    overflow: visible;
+}
+.toggle-buttons {
+    margin-bottom: 20px;
+}
+.toggle-button {
+    padding: 10px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    width: 80px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+}
+.toggle-button.active {
+    background-color: #0056b3;
+}
+.content-wrapper {
+    position: relative;
+    /* height: 300px; */
+    overflow: visible;
+}
+.content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+    transform: translateX(100%);
+}
+.content.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+.comment-section, .qa-section {
+    padding: 20px;
+}
+.comment-list, .qa-text {
+    margin-top: 20px;
+}
+.comment-item, .qa-text {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+.comment-input {
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+}
+.delete-button {
+    margin-left: 10px;
+    cursor: pointer;
+    color: red;
+    /* font-size: 14px; */
+    margin-top: 5px;
+    margin-right: 20px;
+    float: right;
+    /* border: 10px solid blue; */
+}
+.comment-container{
+    float: none;
+    position: relative;
+    top:20px;
+    width: 100%;
+    height: 999px; 
+    background-color: white; 
+    overflow: visible; 
+}
+ .comment{
+    overflow: hidden;
+ }
+.comment p{
+    margin-top: 5px;
+    margin-left: 20px;
+    float: left;
+    /* border: 10px solid blue; */
+}
