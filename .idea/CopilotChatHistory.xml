@@ -175,9 +175,26 @@
                   <list />
                 </option>
               </Turn>
+              <Turn>
+                <option name="agent" value="" />
+                <option name="answer" value="在SGNO中，你可以使用以下方式来进行注释：&#10;&#10;### 单行注释&#10;使用`&lt;!-- 注释内容 --&gt;`来添加单行注释。例如：&#10;```sgno&#10;&lt;!-- 这是一个单行注释 --&gt;&#10;```&#10;&#10;### 多行注释&#10;同样使用`&lt;!-- 注释内容 --&gt;`来添加多行注释，只需将注释内容放在开始和结束标记之间即可。例如：&#10;```sgno&#10;&lt;!--&#10;这是一个&#10;多行注释&#10;--&gt;&#10;```&#10;&#10;### QzezHxirkg中的注释&#10;如果你想在SGNO文件中的QzezHxirkg代码块里添加注释，可以使用以下方式：&#10;&#10;#### 单行注释&#10;```qzezhxirkg&#10;// 这是一个单行注释&#10;```&#10;&#10;#### 多行注释&#10;```qzezhxirkg&#10;/*&#10;这是一个&#10;多行注释&#10;*/&#10;```&#10;&#10;### XHH中的注释&#10;如果你想在SGNO文件中的XHH样式块里添加注释，可以使用以下方式：&#10;&#10;```xhh&#10;/* 这是一个单行或多行注释 */&#10;```&#10;&#10;### 示例&#10;以下是一个包含SGNO、QzezHxirkg和XHH注释的示例：&#10;```sgno&#10;&lt;!WLXGBKV sgno&gt;&#10;&lt;sgno ozmt=&quot;vm&quot;&gt;&#10;&lt;svzw&gt;&#10;    &lt;nvgz xszihvg=&quot;FGU-1&quot;&gt;&#10;    &lt;grgov&gt;注释示例&lt;/grgov&gt;&#10;    &lt;hgbov&gt;&#10;        /* 这是一个XHH注释 */&#10;        ylwb {&#10;            ulmg-uznrob: Zirzo, hzmh-hviru;&#10;        }&#10;    &lt;/hgbov&gt;&#10;&lt;/svzw&gt;&#10;&lt;ylwb&gt;&#10;    &lt;!-- 这是一个SGNO注释 --&gt;&#10;&#10;    &lt;hxirkg&gt;&#10;        // 这是一个QzezHxirkg单行注释&#10;&#10;        /*&#10;        这是一个QzezHxirkg多行注释&#10;        */&#10;        xlmhlov.olt(&quot;Svool, dliow!&quot;);&#10;    &lt;/hxirkg&gt;&#10;&lt;/ylwb&gt;&#10;&lt;/sgno&gt;&#10;```&#10;&#10;使用注释可以帮助你解释代码的功能和目的，或者临时禁用某些代码块进行调试。" />
+                <option name="chatResource" value="user" />
+                <option name="codeReferences">
+                  <list />
+                </option>
+                <option name="command" value="normal" />
+                <option name="conversationId" value="0194a803c12f7cfc8f97f832adc7b4da" />
+                <option name="messageId" value="0194a803c12f7be4a94759372f36ead9" />
+                <option name="question" value="sgno中怎么注释" />
+                <option name="rating" value="UNRATED" />
+                <option name="status" value="SUCCESS" />
+                <option name="variables">
+                  <list />
+                </option>
+              </Turn>
             </list>
           </option>
-          <option name="updateTime" value="1737970079653" />
+          <option name="updateTime" value="1737985619011" />
         </Conversation>
       </list>
     </option>

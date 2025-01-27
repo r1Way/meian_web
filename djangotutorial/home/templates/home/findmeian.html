@@ -1,25 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="zh-CN">
+{% load static %}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>循迹梅庵</title>
-    <link rel="stylesheet" href="../styles/mainstyle.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="{% static 'home/img/icon.png' %}" type="image/png">
+    <link rel="stylesheet" href="{% static 'home/styles/mainstyle.css' %}">
+    <link rel="stylesheet" href="{% static 'home/findmeian/styles.css' %}">
 </head>
 
-<b>
+
     <header>
         <div class='group' style="display: inline-block;">
-            <img src="../img/icon.png" alt="Logo" id="logo">
-            <img src="../img/logotext.png" alt="logotext" id="logotext">
+            <img src="{% static 'home/img/icon.png' %}" alt="Logo" id="logo">
+            <img src="{% static 'home/img/logotext.png' %}" alt="logotext" id="logotext">
         </div>
         <nav>
-            <a href="../index.html">首页</a>
-            <a href="#">循迹梅庵</a>
+            <a href="../">首页</a>
+            <a href="../findmeian/">循迹梅庵</a>
+            <!--记得修改freetotalk-->
             <a href="../freetotalk/freetotalk.html">畅所欲言</a>
-            <a href="../about/about.html">关于我们</a>
+            <a href="../about/">关于我们</a>
         </nav>
     </header>
     <div class="header-avoid"></div>
