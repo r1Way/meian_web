@@ -19,6 +19,7 @@ class LoginForm(forms.Form):
 
 
 class RegisterForm(forms.ModelForm):
+
     username = forms.CharField(label='用户', min_length=6, widget=forms.TextInput(
         attrs={'class': 'input', 'placeholder': '用户名'}
     ))

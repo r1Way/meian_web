@@ -4,6 +4,12 @@
     <option name="conversations">
       <list>
         <Conversation>
+          <option name="createTime" value="1738203863770" />
+          <option name="id" value="0194b5061ada76bdb08ecc56e248fd45" />
+          <option name="title" value="新对话 2025年1月30日 10:24:23" />
+          <option name="updateTime" value="1738203863770" />
+        </Conversation>
+        <Conversation>
           <option name="createTime" value="1738029596128" />
           <option name="id" value="0194aaa2fde0747c99866b4611c0e65f" />
           <option name="title" value="对于def vote(request, question_id):&#10;    return HttpR" />
@@ -306,18 +312,7 @@
                 <option name="rating" value="UNRATED" />
                 <option name="status" value="SUCCESS" />
                 <option name="variables">
-                  <list>
-                    <CodebaseVariable>
-                      <option name="endOffset" value="9" />
-                      <option name="identifierHash" value="VARIABLE_7d9dfaf52c722e05998a50779005aa1eac507290def57d56c3f3378918e2b837" />
-                      <option name="selectedPlaceHolder">
-                        <Object />
-                      </option>
-                      <option name="selectedVariable">
-                        <Object />
-                      </option>
-                    </CodebaseVariable>
-                  </list>
+                  <list />
                 </option>
               </Turn>
               <Turn>
@@ -673,19 +668,7 @@
                 <option name="rating" value="UNRATED" />
                 <option name="status" value="SUCCESS" />
                 <option name="variables">
-                  <list>
-                    <CodebaseVariable>
-                      <option name="endOffset" value="25" />
-                      <option name="identifierHash" value="VARIABLE_2d6cbe49a35903f1a67f9a4742121cb5fc0591c749e2092842dbeb41bf8701f8" />
-                      <option name="selectedPlaceHolder">
-                        <Object />
-                      </option>
-                      <option name="selectedVariable">
-                        <Object />
-                      </option>
-                      <option name="startOffset" value="16" />
-                    </CodebaseVariable>
-                  </list>
+                  <list />
                 </option>
               </Turn>
               <Turn>
@@ -873,18 +856,7 @@
                 <option name="rating" value="UNRATED" />
                 <option name="status" value="SUCCESS" />
                 <option name="variables">
-                  <list>
-                    <CodebaseVariable>
-                      <option name="endOffset" value="9" />
-                      <option name="identifierHash" value="VARIABLE_7d9dfaf52c722e05998a50779005aa1eac507290def57d56c3f3378918e2b837" />
-                      <option name="selectedPlaceHolder">
-                        <Object />
-                      </option>
-                      <option name="selectedVariable">
-                        <Object />
-                      </option>
-                    </CodebaseVariable>
-                  </list>
+                  <list />
                 </option>
               </Turn>
               <Turn>
@@ -1191,18 +1163,7 @@
                 <option name="rating" value="UNRATED" />
                 <option name="status" value="SUCCESS" />
                 <option name="variables">
-                  <list>
-                    <CodebaseVariable>
-                      <option name="endOffset" value="9" />
-                      <option name="identifierHash" value="VARIABLE_7d9dfaf52c722e05998a50779005aa1eac507290def57d56c3f3378918e2b837" />
-                      <option name="selectedPlaceHolder">
-                        <Object />
-                      </option>
-                      <option name="selectedVariable">
-                        <Object />
-                      </option>
-                    </CodebaseVariable>
-                  </list>
+                  <list />
                 </option>
               </Turn>
               <Turn>
@@ -1444,18 +1405,7 @@
                 <option name="rating" value="UNRATED" />
                 <option name="status" value="SUCCESS" />
                 <option name="variables">
-                  <list>
-                    <CodebaseVariable>
-                      <option name="endOffset" value="9" />
-                      <option name="identifierHash" value="VARIABLE_7d9dfaf52c722e05998a50779005aa1eac507290def57d56c3f3378918e2b837" />
-                      <option name="selectedPlaceHolder">
-                        <Object />
-                      </option>
-                      <option name="selectedVariable">
-                        <Object />
-                      </option>
-                    </CodebaseVariable>
-                  </list>
+                  <list />
                 </option>
               </Turn>
               <Turn>
