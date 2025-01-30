@@ -15,14 +15,10 @@ class UserProfile(models.Model):
     image=models.ImageField(verbose_name='头像',upload_to='user_img/%Y/%m',default='user_img/default.png',max_length=100,)
 
 class Comment(models.Model):
-    user_profile = models.ForeignKey(UserProfile, on_delete=models.CASCADE, verbose_name='用户配置文件')  # 修改这里
+    owner= models.ForeignKey(User, on_delete=models.CASCADE, verbose_name='comment_user')  # 修改这里
     title = models.CharField(max_length=200)
     content = models.TextField()
     date = models.DateTimeField(auto_now_add=True)
 
-# class Post(models.Model):
-#     title = models.CharField(max_length=200)
-#     content = models.TextField()
-#     date = models.DateTimeField(auto_now_add=True)
-#     author = models.CharField(max_length=20)
-#     comment = models.ManyToManyField(Comment, blank=True)
+    def __str__(self):
+        return self.title

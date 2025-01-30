@@ -1,5 +1,6 @@
 from django import forms
 from django.contrib.auth.models import User
+from .models import Comment
 class LoginForm(forms.Form):
     username = forms.CharField(label='用户', max_length=32,widget=forms.TextInput(
         attrs={'class':'input','placeholder':'用户名'}
@@ -50,3 +51,16 @@ class RegisterForm(forms.ModelForm):
         if passwordGet != password1Get:  # 判断两次密码是否相同
             raise forms.ValidationError('两次密码不一致')
         return  password1Get
+
+
+class CommentForm(forms.ModelForm):#评论表单
+    title = forms.CharField(label='标题', max_length=100, widget=forms.TextInput(
+        attrs={'class': 'input', 'placeholder': '标题'}
+    ))
+    content = forms.CharField(label='评论', max_length=200, widget=forms.Textarea(
+        attrs={'class': 'textarea', 'placeholder': '评论', 'rows': 5}
+    ))
+
+    class Meta:
+        model = Comment
+        fields = ['title', 'content']#不用包含date吗？

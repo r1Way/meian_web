@@ -1,7 +1,7 @@
 from django.contrib.auth import authenticate, login
 from django.http import HttpResponse
 from django.shortcuts import render, redirect  # 首先从django.shortcuts导入render函数
-from .forms import LoginForm, RegisterForm
+from .forms import LoginForm, RegisterForm, CommentForm
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
 
@@ -26,8 +26,21 @@ def about(request):
     return render(request,"home/about.html", context)
 
 def freetotalk_view(request):
+    if request.method != 'POST':
+        form =CommentForm()
+    else:
+        form =CommentForm(request.POST)
+        if form.is_valid():
+            comment =form.save(commit=False)
+            if request.user is not None:
+                comment.owner=request.user
+                comment.save()
+            else:
+                return redirect('../')
+            return redirect('../')
     context = {
-        'user': request.user
+        'user': request.user,
+        'form': form
     }
     return render(request,'home/freetotalk.html', context)
 
