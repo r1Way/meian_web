@@ -1,24 +1,16 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="{% static 'home/img/icon.png' %}" type="image/png">
-    <title>登录页面</title>
-    <link rel="stylesheet" href="{% static 'home/users/bulma.css' %}">
-</head>
-<body>
-<div class="container">
-    <div class="box">
-        <h1 class="is-suppercase has-text-centered has-text-weight-bold is-size-4">登录
-        <hr class="dropdown-divider">
-        <form action="" method="post" >
-            {% csrf_token %}
-            {{form.as_p}}
-            <input type="submit"  class=" button is-link is-fullwidth"  value="提交">
-        </form>
-    </div>
+{% extends "home/base.html" %}
+{% block title %}
+<title>登录页面</title>
+{% endblock title %}
+{% block content %}
+<div class="box">
+    <h1 class="is-suppercase has-text-centered has-text-weight-bold is-size-4">登录</h1>
+    <a href="../register">未拥有账号？点击注册</a>
+    <hr class="dropdown-divider">
+    <form action="" method="post" >
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit"  class=" button is-link is-fullwidth"  value="提交">
+    </form>
 </div>
-</body>
-</html>
+{% endblock content %}

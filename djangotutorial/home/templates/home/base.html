@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}{% endblock title %}
+    <link rel="icon" href="{% static 'home/img/icon.png' %}" type="image/png">
+    <link rel="stylesheet" href="{% static 'home/styles/mainstyle.css' %}">
+    {% block otherstyles %}{% endblock otherstyles %}
+        
+</head>
+<body>
+    <header>
+        <div class='group' style="display: inline-block;">
+            <img src="{% static 'home/img/icon.png' %}" alt="Logo" id="logo">
+            <img src="{% static 'home/img/logotext.png' %}" alt="logotext" id="logotext">
+        </div>
+        <nav>
+            {% if user.is_authenticated %}
+                <a>用户: {{ user.username }}</a>
+            {% else %}
+                <a>用户: 未登录</a>
+            {% endif %}
+            <a href="../">首页</a>
+            <a href="../findmeian/">循迹梅庵</a>
+            <!--记得修改freetotalk-->
+            <a href="../freetotalk/">畅所欲言</a>
+            <a href="../question/">常见问题</a>
+            <a href="../about/">关于我们</a>
+            <a href="../login">登录</a>
+        </nav>
+    </header>
+    <div class="header-avoid"></div>
+
+    {% block content %}{% endblock content %}
+
+    <footer>
+        <span class="left">
+            <a href="https://www.seu.edu.cn" target="_blank">友情链接</a>
+            <a href="https://1.117.220.194:10086/tencentcloud" target="_blank">管理员面板</a>
+        </span>
+        <a class="right" href="https://beian.miit.gov.cn/" target="_blank">渝ICP备2024048135号&nbsp;&nbsp;</a>
+    </footer>
+
+    
+    {% block script %}{% endblock script %}
+        
+</body>
+</html>

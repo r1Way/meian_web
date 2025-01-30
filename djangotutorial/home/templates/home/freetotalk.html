@@ -1,0 +1,42 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block title %}
+    <title>畅所欲言</title>
+{% endblock title %}
+
+
+{% block otherstyles %}
+    <link rel="stylesheet" href="{% static 'home/styles/freetotalk.css' %}">
+{% endblock otherstyles %}
+    
+
+{% block content %}
+<h1 style="text-align: center; font-size: 100;">畅所欲言</h1>
+
+<div class="container">
+    <div class="content-wrapper">
+        <div id="commentSection" class="content active">
+            <div class="comment-section">
+                <div class="comment-list" id="commentList"></div>
+                <textarea class="comment-input" id="commentInput" placeholder="发表你的观点吧！"></textarea>
+                <button onclick="addComment()">提交</button>
+            </div>
+            <div class="comment-container">
+                <!-- <div id="comments1">
+                    <p style="display: inline;">这是一条评论</p>
+                    <a href="#" class="delete-button">删除按钮</a>
+                </div> -->
+                <div id="comments"></div>
+            </div>
+            
+        </div>
+    </div>
+  </div>
+{% endblock content %}
+    
+
+{% block script %}
+    <script src="{% static 'home/script/freetotalk.js' %}"></script>
+{% endblock script %}
+    

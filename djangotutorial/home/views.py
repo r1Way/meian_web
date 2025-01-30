@@ -6,14 +6,34 @@ from .forms import LoginForm, RegisterForm
 
 def index(request):
     # 直接使用render函数来渲染模板并返回响应
-    return render(request, "home/index.html")
+    context = {
+        'user': request.user
+    }
+    return render(request, "home/index.html", context)
 
 def findmeian(request):
-
-    return render(request,"home/findmeian.html")
+    context = {
+        'user': request.user
+    }
+    return render(request,"home/findmeian.html", context)
 
 def about(request):
-    return render(request,"home/about.html")
+    context = {
+        'user': request.user
+    }
+    return render(request,"home/about.html", context)
+
+def freetotalk_view(request):
+    context = {
+        'user': request.user
+    }
+    return render(request,'home/freetotalk.html', context)
+
+def question_view(request):
+    context = {
+        'user': request.user
+    }
+    return render(request,'home/question.html', context)
 
 #登录界面
 def login_view(request):
@@ -27,7 +47,7 @@ def login_view(request):
             user = authenticate(request, username=username, password=password)
             if user is not None:
                 login(request, user)
-                return redirect('/admin')
+                return redirect('../')
             else:
                 return HttpResponse('登录失败')
     context = {'form': form}
