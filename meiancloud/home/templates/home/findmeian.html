@@ -1,0 +1,87 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block title %}
+    <title>循迹梅庵</title>
+{% endblock title %}
+    
+
+{% block otherstyles %}
+    <link rel="stylesheet" href="{% static 'home/findmeian/styles.css' %}">    
+{% endblock otherstyles %}
+
+{% block content %}
+<div class="header-avoid"></div>
+
+<h1 style="text-align: center;">循迹梅庵</h1>
+
+<div class="intro">
+    <!-- 按钮部分 -->
+    <div class="buttons">
+        <div class="line1">
+            <div class="left">
+                <div class="room14">
+                    <button data-target="section1" class="button1">梅庵</button>
+                    <button data-target="section4" class="button4">会议场景</button>
+                </div>
+                <div class="zoulang">过道</div>
+            </div>
+            <div class="room56">
+                <button data-target="section5" class="button5">青年运动</button>
+                <button data-target="section6" class="button6">会议记录</button>
+            </div>
+        </div>
+
+        <div class="room23">
+            <button data-target="section2" class="button2">师道梅庵</button>
+            <button data-target="section3" class="button3">真理耀东南</button>
+        </div>
+    </div>
+
+    <!-- 内容区域 -->
+    <div class="sections">
+        <!-- 梅庵 -->
+        <section id="section1">
+            <h2>梅庵</h2>
+            <p>这里是梅庵的内容。</p>
+        </section>
+
+        <!-- 师道梅庵 -->
+        <section id="section2">
+            <h2>师道梅庵</h2>
+            <p>这里是师道梅庵的内容。</p>
+        </section>
+
+        <!-- 真理耀东南 -->
+        <section id="section3">
+            <h2>真理耀东南</h2>
+            <p>这里是真理耀东南的内容。</p>
+        </section>
+
+        <!-- 会议场景 -->
+        <section id="section4">
+            <h2>会议场景</h2>
+            <p>这里是会议场景的内容。</p>
+        </section>
+
+        <!-- 会议记录 -->
+        <section id="section5">
+            <h2>会议记录</h2>
+            <p>这里是会议记录的内容。</p>
+        </section>
+
+        <!-- 青年运动 -->
+        <section id="section6">
+            <h2>青年运动</h2>
+            <p>这里是青年运动的内容。</p>
+        </section>
+    </div>
+</div>
+{% endblock content %}
+
+
+{% block script %}
+<script src="{% static 'home/findmeian/script.js' %}"></script>
+{% endblock script %}
+    
+    

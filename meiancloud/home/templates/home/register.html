@@ -1,0 +1,13 @@
+{% extends "home/base.html" %}
+{% block title %}
+<title>注册页面</title>
+{% endblock title %}
+{% block content %}
+<div class="box">
+     <form action="" method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" style="margin-top:1em" class=" button is-link is-fullwidth"  value="提交">
+    </form>
+</div>
+{% endblock content %}
