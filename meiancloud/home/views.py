@@ -1,4 +1,4 @@
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponse
 from django.shortcuts import render, redirect  # 首先从django.shortcuts导入render函数
 from .forms import LoginForm, RegisterForm, CommentForm
@@ -83,6 +83,11 @@ def register_view(request):
     context = {'form': form}
     return render(request, 'home/register.html',context)
 
+
+def logout_view(request):
+    logout(request)
+    return redirect('../')
+
 #用户界面
 @login_required(login_url='home:login')
 def user_profile_view(request,username):
@@ -91,3 +96,5 @@ def user_profile_view(request,username):
     else:
         redirect('login')
         print('错误')
+
+#注销界面

@@ -1,5 +1,6 @@
 from django.urls import path
 from . import views
+app_name = 'home'  # 设置命名空间
 
 urlpatterns = [
     path("", views.index, name="index"),
@@ -9,5 +10,6 @@ urlpatterns = [
     path("register/",views.register_view,name="register"),
     path('freetotalk/',views.freetotalk_view,name='freetotalk'),
     path('question/',views.question_view,name='question'),
-    path('profile/<str:username>/',views.user_profile_view,name='userprofile')
+    path('profile/<str:username>/',views.user_profile_view,name='userprofile'),
+    path('logout/',views.logout_view,name='logout'),
 ]
